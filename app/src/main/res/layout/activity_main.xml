@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="General Knowledge Quiz"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#4E4C4C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Your name?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name Here"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/questions"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape"
+            android:text="Which is the biggest country in the world?" />
+
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape">
+
+            <RadioButton
+                android:id="@+id/question_1_answer_1_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Russia" />
+
+            <RadioButton
+                android:id="@+id/question_1_answer_2_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:checked="false"
+                android:text="Brazil" />
+
+            <RadioButton
+                android:id="@+id/question_1_answer_3_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:checked="false"
+                android:text="China" />
+
+            <RadioButton
+                android:id="@+id/question_1_answer_4_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:checked="false"
+                android:text="India" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questions"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape"
+            android:text="Which is the smallest country in the world" />
+
+        <RadioGroup
+            android:id="@+id/group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question_2_answer_1_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Peru" />
+
+            <RadioButton
+                android:id="@+id/question_2_answer_2_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Chile" />
+
+            <RadioButton
+                android:id="@+id/question_2_answer_3_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Vatican City" />
+
+            <RadioButton
+                android:id="@+id/question_2_answer_4_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Nauru" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questions"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape"
+            android:text="Which is the most spoken language in the world?" />
+
+        <RadioGroup
+            android:id="@+id/group3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question_3_answer_1_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Spanish" />
+
+            <RadioButton
+                android:id="@+id/question_3_answer_2_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Chinese" />
+
+            <RadioButton
+                android:id="@+id/question_3_answer_3_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="English" />
+
+            <RadioButton
+                android:id="@+id/question_3_answer_4_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Russian" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questions"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape"
+            android:text="What is the most sold book in the world?" />
+
+        <RadioGroup
+            android:id="@+id/group4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question_4_answer_1_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Dom Quixote" />
+
+            <RadioButton
+                android:id="@+id/question_4_answer_2_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="The Little Prince" />
+
+            <RadioButton
+                android:id="@+id/question_4_answer_3_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Tale of Two Cities" />
+
+            <RadioButton
+                android:id="@+id/question_4_answer_4_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="The Bible" />
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape"
+            android:text="Which of these are romance languages?" />
+
+        <CheckBox
+            android:id="@+id/question_5_answer_1_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="Portuguese" />
+
+        <CheckBox
+            android:id="@+id/question_5_answer_2_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="French" />
+
+        <CheckBox
+            android:id="@+id/question_5_answer_3_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="English" />
+
+        <TextView
+            style="@style/questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape"
+            android:text="What year was Java created?" />
+
+        <EditText
+            android:id="@+id/java_year_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:hint="Enter year"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="8dp" />
+
+        <Button
+
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="submitQuestions"
+            android:text="Submit" />
+
+
+    </LinearLayout>
+</ScrollView>
